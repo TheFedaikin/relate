@@ -1,0 +1,7 @@
+error: Unknown option `unknown`.
+       Valid options: `both`, `cloned`, `copy`, `move`, `try_from`, `error = Type`
+       Example: #[relate(SourceType, both, cloned)]
+  --> tests/fail/derive_unknown_option.rs:10:18
+   |
+10 | #[relate(Source, unknown)]
+   |                  ^^^^^^^

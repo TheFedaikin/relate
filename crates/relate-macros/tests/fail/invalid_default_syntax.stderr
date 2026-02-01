@@ -1,0 +1,5 @@
+error: Expected `;` after field mapping
+  --> tests/fail/invalid_default_syntax.rs:16:20
+   |
+16 |         id: default: 42;
+   |                    ^

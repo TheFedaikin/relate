@@ -1,0 +1,9 @@
+error: Missing #[relate(SourceType)] attribute.
+       Add `#[relate(SourceType)]` above your struct, where SourceType is the struct to convert from.
+       Example: #[relate(User)] or #[relate(User, both)] for bidirectional
+ --> tests/fail/derive_no_relate_attr.rs:9:10
+  |
+9 | #[derive(Relate)]
+  |          ^^^^^^
+  |
+  = note: this error originates in the derive macro `Relate` (in Nightly builds, run with -Z macro-backtrace for more info)

@@ -1,0 +1,15 @@
+error[E0609]: no field `nonexistent` on type `Source`
+  --> tests/fail/unknown_source_field.rs:19:24
+   |
+19 |         value: with = .nonexistent;
+   |                        ^^^^^^^^^^^ unknown field
+   |
+   = note: available field is: `name`
+
+error[E0609]: no field `nonexistent` on type `&Source`
+  --> tests/fail/unknown_source_field.rs:19:24
+   |
+19 |         value: with = .nonexistent;
+   |                        ^^^^^^^^^^^ unknown field
+   |
+   = note: available field is: `name`

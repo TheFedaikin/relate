@@ -1,0 +1,11 @@
+error[E0063]: missing field `value` in initializer of `Target`
+  --> tests/fail/missing_field.rs:16:1
+   |
+16 | / relate_structs! {
+17 | |     Source ~> Target {
+18 | |         name;
+...  |
+21 | | }
+   | |_^ missing `value`
+   |
+   = note: this error originates in the macro `relate_structs` (in Nightly builds, run with -Z macro-backtrace for more info)

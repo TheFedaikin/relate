@@ -1,0 +1,7 @@
+error: Unknown option `invalid_mode`.
+       Valid options: `both`, `cloned`, `copy`, `move`, `try_from`, `error = Type`
+       Example: #[relate(SourceType, both, cloned)]
+  --> tests/fail/invalid_clone_mode.rs:12:18
+   |
+12 | #[relate(Source, invalid_mode)]
+   |                  ^^^^^^^^^^^^

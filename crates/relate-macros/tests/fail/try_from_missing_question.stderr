@@ -1,0 +1,17 @@
+error[E0308]: mismatched types
+  --> tests/fail/try_from_missing_question.rs:13:1
+   |
+13 | / relate_structs! {
+14 | |     Source ~>? Target {
+15 | |         value: with = _.parse();
+16 | |     }
+17 | | }
+   | |_^ expected `i32`, found `Result<_, _>`
+   |
+   = note: expected type `i32`
+              found enum `Result<_, _>`
+   = note: this error originates in the macro `relate_structs` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: use the `?` operator to extract the `Result<_, _>` value, propagating a `Result::Err` value to the caller
+   |
+17 | }?
+   |  +

@@ -1,0 +1,19 @@
+[workspace]
+members = ["crates/*"]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+repository = "https://github.com/TheFedaikin/relate"
+documentation = "https://docs.rs/relate"
+homepage = "https://github.com/TheFedaikin/relate"
+rust-version = "1.85"
+
+[workspace.dependencies]
+syn = { version = "2", features = ["full", "parsing", "extra-traits", "visit"] }
+quote = "1"
+proc-macro2 = "1"
+thiserror = "2.0"
+trybuild = "1"
+macrotest = "1"

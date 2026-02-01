@@ -1,0 +1,23 @@
+error[E0560]: struct `Target` has no field named `nonexistent_field`
+  --> tests/fail/unknown_field.rs:18:9
+   |
+18 |         nonexistent_field;
+   |         ^^^^^^^^^^^^^^^^^ `Target` does not have this field
+   |
+   = note: all struct fields are already assigned
+
+error[E0609]: no field `nonexistent_field` on type `Source`
+  --> tests/fail/unknown_field.rs:18:9
+   |
+18 |         nonexistent_field;
+   |         ^^^^^^^^^^^^^^^^^ unknown field
+   |
+   = note: available field is: `name`
+
+error[E0609]: no field `nonexistent_field` on type `&Source`
+  --> tests/fail/unknown_field.rs:18:9
+   |
+18 |         nonexistent_field;
+   |         ^^^^^^^^^^^^^^^^^ unknown field
+   |
+   = note: available field is: `name`

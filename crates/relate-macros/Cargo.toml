@@ -1,0 +1,25 @@
+[package]
+name = "relate-macros"
+version.workspace = true
+edition.workspace = true
+repository.workspace = true
+documentation.workspace = true
+homepage.workspace = true
+rust-version.workspace = true
+description = "Proc macros for generating From and TryFrom implementations"
+license = "MIT"
+keywords = ["proc-macro", "derive", "from", "tryfrom", "mapping"]
+categories = ["development-tools::procedural-macro-helpers"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn.workspace = true
+quote.workspace = true
+proc-macro2.workspace = true
+
+[dev-dependencies]
+trybuild.workspace = true
+macrotest.workspace = true
+relate = { path = "../relate" }

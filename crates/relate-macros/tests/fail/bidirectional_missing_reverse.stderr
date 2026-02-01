@@ -1,0 +1,12 @@
+error[E0063]: missing field `value` in initializer of `Source`
+  --> tests/fail/bidirectional_missing_reverse.rs:18:1
+   |
+18 | / relate_structs! {
+19 | |     Source ~ Target {
+20 | |         name;
+21 | |         doubled: with = .value * 2;
+22 | |     }
+23 | | }
+   | |_^ missing `value`
+   |
+   = note: this error originates in the macro `relate_structs` (in Nightly builds, run with -Z macro-backtrace for more info)

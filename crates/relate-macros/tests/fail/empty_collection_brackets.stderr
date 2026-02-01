@@ -1,0 +1,16 @@
+error: expected expression, found `)`
+  --> tests/fail/empty_collection_brackets.rs:11:24
+   |
+11 | #[derive(Debug, Clone, Relate)]
+   |                        ^^^^^^
+   |                        |
+   |                        expected expression
+   |                        while parsing the body of this closure
+   |
+   = note: this error originates in the derive macro `Relate` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error: proc-macro derive produced unparsable tokens
+  --> tests/fail/empty_collection_brackets.rs:11:24
+   |
+11 | #[derive(Debug, Clone, Relate)]
+   |                        ^^^^^^

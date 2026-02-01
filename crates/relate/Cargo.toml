@@ -1,0 +1,20 @@
+[package]
+name = "relate"
+version.workspace = true
+edition.workspace = true
+repository.workspace = true
+documentation.workspace = true
+homepage.workspace = true
+rust-version.workspace = true
+description = "Generate From and TryFrom implementations between structs"
+license = "MIT"
+keywords = ["from", "tryfrom", "struct", "mapping", "derive"]
+categories = ["development-tools::procedural-macro-helpers"]
+
+[features]
+default = ["derive"]
+derive = ["dep:relate-macros"]
+
+[dependencies]
+relate-macros = { version = "0.1", path = "../relate-macros", optional = true }
+thiserror.workspace = true

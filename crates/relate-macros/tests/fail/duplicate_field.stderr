@@ -1,0 +1,12 @@
+error[E0062]: field `id` specified more than once
+  --> tests/fail/duplicate_field.rs:18:9
+   |
+14 | / relate_structs! {
+15 | |     Source ~> Target {
+16 | |         id;
+17 | |         name;
+18 | |         id;
+   | |         ^^ used more than once
+19 | |     }
+20 | | }
+   | |_- first use of `id`
